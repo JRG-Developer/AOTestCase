@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44440021193FAC4800C6F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440020193FAC4800C6F551 /* Foundation.framework */; };
+		44440026193FAC4800C6F551 /* AOTestCase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44440025193FAC4800C6F551 /* AOTestCase.h */; };
+		44440028193FAC4800C6F551 /* AOTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44440027193FAC4800C6F551 /* AOTestCase.m */; };
+		4444002F193FAC4800C6F551 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444002E193FAC4800C6F551 /* XCTest.framework */; };
+		44440030193FAC4800C6F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440020193FAC4800C6F551 /* Foundation.framework */; };
+		44440032193FAC4800C6F551 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440031193FAC4800C6F551 /* UIKit.framework */; };
+		44440035193FAC4800C6F551 /* libAOTestCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444001D193FAC4800C6F551 /* libAOTestCase.a */; };
+		4444003B193FAC4800C6F551 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44440039193FAC4800C6F551 /* InfoPlist.strings */; };
+		4444003D193FAC4800C6F551 /* AOTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4444003C193FAC4800C6F551 /* AOTestCaseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44440033193FAC4800C6F551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44440015193FAC4800C6F551 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4444001C193FAC4800C6F551;
+			remoteInfo = AOTestCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4444001B193FAC4800C6F551 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				44440026193FAC4800C6F551 /* AOTestCase.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4444001D193FAC4800C6F551 /* libAOTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAOTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		44440020193FAC4800C6F551 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44440024193FAC4800C6F551 /* AOTestCase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOTestCase-Prefix.pch"; sourceTree = "<group>"; };
+		44440025193FAC4800C6F551 /* AOTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOTestCase.h; sourceTree = "<group>"; };
+		44440027193FAC4800C6F551 /* AOTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOTestCase.m; sourceTree = "<group>"; };
+		4444002D193FAC4800C6F551 /* AOTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4444002E193FAC4800C6F551 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		44440031193FAC4800C6F551 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		44440038193FAC4800C6F551 /* AOTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOTestCaseTests-Info.plist"; sourceTree = "<group>"; };
+		4444003A193FAC4800C6F551 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4444003C193FAC4800C6F551 /* AOTestCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOTestCaseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4444001A193FAC4800C6F551 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44440021193FAC4800C6F551 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4444002A193FAC4800C6F551 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4444002F193FAC4800C6F551 /* XCTest.framework in Frameworks */,
+				44440035193FAC4800C6F551 /* libAOTestCase.a in Frameworks */,
+				44440032193FAC4800C6F551 /* UIKit.framework in Frameworks */,
+				44440030193FAC4800C6F551 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44440014193FAC4800C6F551 = {
+			isa = PBXGroup;
+			children = (
+				44440022193FAC4800C6F551 /* AOTestCase */,
+				44440036193FAC4800C6F551 /* AOTestCaseTests */,
+				4444001F193FAC4800C6F551 /* Frameworks */,
+				4444001E193FAC4800C6F551 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4444001E193FAC4800C6F551 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4444001D193FAC4800C6F551 /* libAOTestCase.a */,
+				4444002D193FAC4800C6F551 /* AOTestCaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4444001F193FAC4800C6F551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44440020193FAC4800C6F551 /* Foundation.framework */,
+				4444002E193FAC4800C6F551 /* XCTest.framework */,
+				44440031193FAC4800C6F551 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44440022193FAC4800C6F551 /* AOTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				44440025193FAC4800C6F551 /* AOTestCase.h */,
+				44440027193FAC4800C6F551 /* AOTestCase.m */,
+				44440023193FAC4800C6F551 /* Supporting Files */,
+			);
+			path = AOTestCase;
+			sourceTree = "<group>";
+		};
+		44440023193FAC4800C6F551 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44440024193FAC4800C6F551 /* AOTestCase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44440036193FAC4800C6F551 /* AOTestCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				4444003C193FAC4800C6F551 /* AOTestCaseTests.m */,
+				44440037193FAC4800C6F551 /* Supporting Files */,
+			);
+			path = AOTestCaseTests;
+			sourceTree = "<group>";
+		};
+		44440037193FAC4800C6F551 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44440038193FAC4800C6F551 /* AOTestCaseTests-Info.plist */,
+				44440039193FAC4800C6F551 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4444001C193FAC4800C6F551 /* AOTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44440040193FAC4800C6F551 /* Build configuration list for PBXNativeTarget "AOTestCase" */;
+			buildPhases = (
+				44440019193FAC4800C6F551 /* Sources */,
+				4444001A193FAC4800C6F551 /* Frameworks */,
+				4444001B193FAC4800C6F551 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOTestCase;
+			productName = AOTestCase;
+			productReference = 4444001D193FAC4800C6F551 /* libAOTestCase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4444002C193FAC4800C6F551 /* AOTestCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44440043193FAC4800C6F551 /* Build configuration list for PBXNativeTarget "AOTestCaseTests" */;
+			buildPhases = (
+				44440029193FAC4800C6F551 /* Sources */,
+				4444002A193FAC4800C6F551 /* Frameworks */,
+				4444002B193FAC4800C6F551 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44440034193FAC4800C6F551 /* PBXTargetDependency */,
+			);
+			name = AOTestCaseTests;
+			productName = AOTestCaseTests;
+			productReference = 4444002D193FAC4800C6F551 /* AOTestCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44440015193FAC4800C6F551 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "App-Order";
+			};
+			buildConfigurationList = 44440018193FAC4800C6F551 /* Build configuration list for PBXProject "AOTestCase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44440014193FAC4800C6F551;
+			productRefGroup = 4444001E193FAC4800C6F551 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4444001C193FAC4800C6F551 /* AOTestCase */,
+				4444002C193FAC4800C6F551 /* AOTestCaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4444002B193FAC4800C6F551 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4444003B193FAC4800C6F551 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44440019193FAC4800C6F551 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44440028193FAC4800C6F551 /* AOTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44440029193FAC4800C6F551 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4444003D193FAC4800C6F551 /* AOTestCaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44440034193FAC4800C6F551 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4444001C193FAC4800C6F551 /* AOTestCase */;
+			targetProxy = 44440033193FAC4800C6F551 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44440039193FAC4800C6F551 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4444003A193FAC4800C6F551 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4444003E193FAC4800C6F551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4444003F193FAC4800C6F551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44440041193FAC4800C6F551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AOTestCase.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOTestCase/AOTestCase-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44440042193FAC4800C6F551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AOTestCase.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOTestCase/AOTestCase-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44440044193FAC4800C6F551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOTestCase/AOTestCase-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AOTestCaseTests/AOTestCaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		44440045193FAC4800C6F551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOTestCase/AOTestCase-Prefix.pch";
+				INFOPLIST_FILE = "AOTestCaseTests/AOTestCaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44440018193FAC4800C6F551 /* Build configuration list for PBXProject "AOTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4444003E193FAC4800C6F551 /* Debug */,
+				4444003F193FAC4800C6F551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44440040193FAC4800C6F551 /* Build configuration list for PBXNativeTarget "AOTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44440041193FAC4800C6F551 /* Debug */,
+				44440042193FAC4800C6F551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44440043193FAC4800C6F551 /* Build configuration list for PBXNativeTarget "AOTestCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44440044193FAC4800C6F551 /* Debug */,
+				44440045193FAC4800C6F551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44440015193FAC4800C6F551 /* Project object */;
+}
