@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		44440021193FAC4800C6F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440020193FAC4800C6F551 /* Foundation.framework */; };
-		44440026193FAC4800C6F551 /* AOTestCase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44440025193FAC4800C6F551 /* AOTestCase.h */; };
-		44440028193FAC4800C6F551 /* AOTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44440027193FAC4800C6F551 /* AOTestCase.m */; };
 		4444002F193FAC4800C6F551 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444002E193FAC4800C6F551 /* XCTest.framework */; };
 		44440030193FAC4800C6F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440020193FAC4800C6F551 /* Foundation.framework */; };
 		44440032193FAC4800C6F551 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440031193FAC4800C6F551 /* UIKit.framework */; };
 		44440035193FAC4800C6F551 /* libAOTestCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444001D193FAC4800C6F551 /* libAOTestCase.a */; };
 		4444003B193FAC4800C6F551 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44440039193FAC4800C6F551 /* InfoPlist.strings */; };
-		4444003D193FAC4800C6F551 /* AOTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4444003C193FAC4800C6F551 /* AOTestCaseTests.m */; };
+		44440048193FAC6800C6F551 /* AOTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44440047193FAC6800C6F551 /* AOTestCase.m */; };
+		44440049193FAC8C00C6F551 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444002E193FAC4800C6F551 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				44440026193FAC4800C6F551 /* AOTestCase.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +43,13 @@
 		4444001D193FAC4800C6F551 /* libAOTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAOTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		44440020193FAC4800C6F551 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44440024193FAC4800C6F551 /* AOTestCase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOTestCase-Prefix.pch"; sourceTree = "<group>"; };
-		44440025193FAC4800C6F551 /* AOTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOTestCase.h; sourceTree = "<group>"; };
-		44440027193FAC4800C6F551 /* AOTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOTestCase.m; sourceTree = "<group>"; };
 		4444002D193FAC4800C6F551 /* AOTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444002E193FAC4800C6F551 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44440031193FAC4800C6F551 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		44440038193FAC4800C6F551 /* AOTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOTestCaseTests-Info.plist"; sourceTree = "<group>"; };
 		4444003A193FAC4800C6F551 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4444003C193FAC4800C6F551 /* AOTestCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOTestCaseTests.m; sourceTree = "<group>"; };
+		44440046193FAC6800C6F551 /* AOTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOTestCase.h; sourceTree = "<group>"; };
+		44440047193FAC6800C6F551 /* AOTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44440049193FAC8C00C6F551 /* XCTest.framework in Frameworks */,
 				44440021193FAC4800C6F551 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +108,8 @@
 		44440022193FAC4800C6F551 /* AOTestCase */ = {
 			isa = PBXGroup;
 			children = (
-				44440025193FAC4800C6F551 /* AOTestCase.h */,
-				44440027193FAC4800C6F551 /* AOTestCase.m */,
+				44440046193FAC6800C6F551 /* AOTestCase.h */,
+				44440047193FAC6800C6F551 /* AOTestCase.m */,
 				44440023193FAC4800C6F551 /* Supporting Files */,
 			);
 			path = AOTestCase;
@@ -128,7 +126,6 @@
 		44440036193FAC4800C6F551 /* AOTestCaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				4444003C193FAC4800C6F551 /* AOTestCaseTests.m */,
 				44440037193FAC4800C6F551 /* Supporting Files */,
 			);
 			path = AOTestCaseTests;
@@ -224,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44440028193FAC4800C6F551 /* AOTestCase.m in Sources */,
+				44440048193FAC6800C6F551 /* AOTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4444003D193FAC4800C6F551 /* AOTestCaseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +326,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/AOTestCase.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOTestCase/AOTestCase-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -342,6 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/AOTestCase.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOTestCase/AOTestCase-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
