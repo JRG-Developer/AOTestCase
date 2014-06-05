@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44440021193FAC4800C6F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440020193FAC4800C6F551 /* Foundation.framework */; };
 		4444002F193FAC4800C6F551 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444002E193FAC4800C6F551 /* XCTest.framework */; };
-		44440030193FAC4800C6F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440020193FAC4800C6F551 /* Foundation.framework */; };
-		44440032193FAC4800C6F551 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44440031193FAC4800C6F551 /* UIKit.framework */; };
 		44440035193FAC4800C6F551 /* libAOTestCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4444001D193FAC4800C6F551 /* libAOTestCase.a */; };
 		4444003B193FAC4800C6F551 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44440039193FAC4800C6F551 /* InfoPlist.strings */; };
 		44440048193FAC6800C6F551 /* AOTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44440047193FAC6800C6F551 /* AOTestCase.m */; };
@@ -46,11 +43,9 @@
 		39DFEEDDD48746B4A99AE71B /* libPods-AOTestCaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOTestCaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88E325F7384C68AFCDDC8B /* Pods-AOTestCaseTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOTestCaseTests.xcconfig"; path = "Pods/Pods-AOTestCaseTests.xcconfig"; sourceTree = "<group>"; };
 		4444001D193FAC4800C6F551 /* libAOTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAOTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		44440020193FAC4800C6F551 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44440024193FAC4800C6F551 /* AOTestCase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOTestCase-Prefix.pch"; sourceTree = "<group>"; };
 		4444002D193FAC4800C6F551 /* AOTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444002E193FAC4800C6F551 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		44440031193FAC4800C6F551 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		44440038193FAC4800C6F551 /* AOTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOTestCaseTests-Info.plist"; sourceTree = "<group>"; };
 		4444003A193FAC4800C6F551 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44440046193FAC6800C6F551 /* AOTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOTestCase.h; sourceTree = "<group>"; };
@@ -66,7 +61,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44440049193FAC8C00C6F551 /* XCTest.framework in Frameworks */,
-				44440021193FAC4800C6F551 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +70,6 @@
 			files = (
 				4444002F193FAC4800C6F551 /* XCTest.framework in Frameworks */,
 				44440035193FAC4800C6F551 /* libAOTestCase.a in Frameworks */,
-				44440032193FAC4800C6F551 /* UIKit.framework in Frameworks */,
-				44440030193FAC4800C6F551 /* Foundation.framework in Frameworks */,
 				AFA80F019D104C48BD360E2A /* libPods-AOTestCaseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,9 +100,7 @@
 		4444001F193FAC4800C6F551 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44440020193FAC4800C6F551 /* Foundation.framework */,
 				4444002E193FAC4800C6F551 /* XCTest.framework */,
-				44440031193FAC4800C6F551 /* UIKit.framework */,
 				39DFEEDDD48746B4A99AE71B /* libPods-AOTestCaseTests.a */,
 			);
 			name = Frameworks;
