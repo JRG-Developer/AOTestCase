@@ -25,6 +25,10 @@
 
 #import <XCTest/XCTest.h>
 
+/**
+ * AOTestCase subclasses XCTestCase and adds asynchronous test support and easy-to-use method swizzling.
+ */
+
 @interface AOTestCase : XCTestCase
 
 /**
@@ -91,6 +95,10 @@
 - (void)endAsynchronousOperation;
 
 @end
+
+/**
+ *  NSObject+AOTestCase_Additions is a category easily setting and getting associated objects using the Objective-C Runtime.
+ */
 
 @interface NSObject (AOTestCase_Additions)
 
