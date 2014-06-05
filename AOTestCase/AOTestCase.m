@@ -27,6 +27,7 @@
 #import <objc/runtime.h>
 
 @interface AOTestCase()
+@property (nonatomic, strong, readwrite) dispatch_semaphore_t semaphore;
 @property (nonatomic, strong) NSTimer *timeOutTimer;
 @property (nonatomic, assign) BOOL timeOut;
 @end
