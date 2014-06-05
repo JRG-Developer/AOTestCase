@@ -146,7 +146,7 @@ const char AOTestAssociationKey;
   });
   
   // then
-  BOOL success = [self waitForAsyncronousOperationWithTimeOut:0.1];
+  BOOL success = [self waitForAsyncronousOperationWithTimeOut:0.5];
   assertThatBool(done, equalToBool(YES));
   assertThatBool(success, equalToBool(YES));
 }
@@ -157,7 +157,7 @@ const char AOTestAssociationKey;
   [self beginAsynchronousOperation];
   
   // when
-  BOOL success = [self waitForAsyncronousOperationWithTimeOut:0.1];
+  BOOL success = [self waitForAsyncronousOperationWithTimeOut:0.5];
   assertThatBool(success, equalToBool(NO));
 }
 
