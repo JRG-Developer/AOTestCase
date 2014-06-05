@@ -32,7 +32,7 @@
  *
  * It's created by `beginAsynchronousOperation`, waited on by `waitForAsyncronousOperationWithTimeOut`, and signaled to by `endAsynchronousOperation`.
  */
-@property (nonatomic, strong ,readonly) dispatch_semaphore_t semaphore;
+@property (nonatomic, strong, readonly) dispatch_semaphore_t semaphore;
 
 /**
  *  This method uses the Objective-C Runtime to swap the CLASS methods given by the selectors. The order of the selectors isn't important.
@@ -67,6 +67,8 @@
 
 /**
  *  This method calls `waitForAsyncronousOperationWithTimeOut:` passing in `1` second.
+ *
+ *  @return `YES` if `semaphore` was signaled (success condition) or `NO` if the time out was reached (failure condition)
  */
 - (BOOL)waitForAsyncronousOperation;
 
@@ -101,7 +103,7 @@
 - (void)setAssociatedValue:(id)value key:(const void *)key;
 
 /**
- *  This method returns an assocaiated value for a given key on `self`.
+ *  This method returns an assocaiated value for the given `key` on `self`.
  *
  *  @param key The key to lookup the associated value
  *
