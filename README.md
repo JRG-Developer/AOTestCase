@@ -121,7 +121,7 @@ In order to contribute:
 4) Add documentation (via appledoc, 100% documentation is required)
 5) Submit a pull request
 
-If you've never written unit tests before, that's okay! You can learn by checking out Jon Reid's (<a href="https://twitter.com/qcoding"@qcoding</a>) excellent <a href="http://qualitycoding.org/">website</a>, including a <a href="http://qualitycoding.org/unit-testing/">section just about unit testing</a>.
+If you've never written unit tests before, that's okay! You can learn by checking out Jon Reid's (<a href="https://twitter.com/qcoding">@qcoding</a>) excellent <a href="http://qualitycoding.org/">website</a>, including a <a href="http://qualitycoding.org/unit-testing/">section just about unit testing</a>.
 
 As this project is part of the CocoaPods specs repo, documentation webpages are automatically generated for it on CocoaDocs from the in-line, appledoc comments. If you're not familar with appledoc, check out Mattt Thompson's (<a href="https://twitter.com/mattt">@matt</a>) introductory <a href="http://nshipster.com/documentation/">post about it</a>.
 
