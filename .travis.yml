@@ -5,7 +5,7 @@ before_install:
     - brew upgrade xctool
 
 before_script:
-  - export LANG=en_US.UTF-8
+    - export LANG=en_US.UTF-8
 
 script:
     - xctool test -workspace AOTestCase.xcworkspace -scheme AOTestCaseTests -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO
