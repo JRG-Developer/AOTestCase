@@ -182,7 +182,7 @@ const char AOTestAssociationKey;
   objc_setAssociatedObject(testObject, &AOTestAssociationKey, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
   
   // when
-  BOOL value = [testObject associatedValueForKey:&AOTestAssociationKey];
+  BOOL value = [[testObject associatedValueForKey:&AOTestAssociationKey] boolValue];
   
   // then
   assertThatBool(value, equalToBool(YES));
