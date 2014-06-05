@@ -1,5 +1,7 @@
 #AOTestCase
 
+[![Build Status](https://travis-ci.org/JRG-Developer/AOTestCase.svg?branch=master)](https://travis-ci.org/JRG-Developer/AOTestCase)
+
 `AOTestCase` subclasses `XCTestCase` and adds asynchronous test support, easy-to-use method swizzling, and a category for setting and getting associated objects.
 
 ##Installation with CocoaPods
