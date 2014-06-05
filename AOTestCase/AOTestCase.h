@@ -54,23 +54,52 @@
  *  This method sets `self.semaphore` to a new dispatch semaphore, to be used by `waitForAsyncronousOperation`.
  *
  *  @warning It is NOT safe to call this method if you're already waiting for an aynchronous method to complete.
- *  @warning You must call this method before you call `waitForAsyncronousOperation`
+ *  @note You should call this method before you call `waitForAsyncronousOperation`
  *
  */
 - (void)beginAsynchronousOperation;
 
 /**
- * This method causes the main run loop to continue to run until `self.semaphore` is signaled.
+ *  This method calls `waitForAsyncronousOperationWithTimeOut:` passing in `1` second.
+ */
+- (BOOL)waitForAsyncronousOperation;
+
+/**
+ * This method causes the main run loop to continue to run until `self.semaphore` is signaled (success condition) or the time out is reached (failure condition). If the time out is reached, this method will cause a test failure.
  *
  * @note It *should* be safe to call this method more than once, but you should avoid doing such (as this may be processor intensive and/or cause the main run loop to run longer than necessary).
+ *
+ *  @param timeOutSeconds The number of seconds to wait for the operation to complete.
+ *
+ *  @return Returns `YES` if `self.semaphore` was signaled (success condition) or `NO` if the time out was reached (failure condition)
  */
-- (void)waitForAsyncronousOperation;
+- (BOOL)waitForAsyncronousOperationWithTimeOut:(NSTimeInterval)timeOutSeconds;
 
 /**
  *  This signals `self.semaphore`.
  *
- *  @warning You should call this method after `waitForAsyncronousOperation` to stop the main run loop from continuing to run.
+ *  @note You should call this method after `waitForAsyncronousOperation` (or `waitForAsyncronousOperationWithTimeOut`) to stop the main run loop from continuing to run.
  */
 - (void)endAsynchronousOperation;
 
+@end
+
+@interface NSObject (AOTestCase_Additions)
+
+/**
+ *  This method uses the Objective-C runtime to associate and given `value` for the given `key` with `self`.
+ *
+ *  @param value The value to be associated with `self` for the given `key`.
+ *  @param key   The key to associate the `value` with `self`.
+ */
+- (void)setAssociatedValue:(id)value key:(const void *)key;
+
+/**
+ *  This method returns an assocaiated value for a given key on `self`.
+ *
+ *  @param key The key to lookup the associated value.
+ *
+ *  @return The value associated with the key.
+ */
+- (id)associatedValueForKey:(const void *)key;
 @end
