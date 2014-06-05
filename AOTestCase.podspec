@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Joshua Greene" => "jrg.developer@gmail.com" }
   s.source   	   = { :git => "https://github.com/JRG-Developer/AOTestCase.git", :tag => "#{s.version}"}
-  s.framework    = "XCTestCase"
+  s.framework    = "XCTest"
   s.requires_arc = true
   s.source_files = "AOTestCase/*.{h,m}"
 end
